@@ -109,7 +109,7 @@ export default class Paragraph {
     div.contentEditable = false;
     div.dataset.placeholder = this.api.i18n.t(this._placeholder);
 
-    div.innerHTML = this._data.text ? this._data.text : '';
+    div.innerHTML = this._data.text ? this._data.text : '<br/>';
 
     if (!this.readOnly) {
       div.contentEditable = true;

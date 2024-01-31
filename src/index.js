@@ -261,18 +261,6 @@ export default class Paragraph {
   }
 
   /**
-   * Used by Editor paste handling API.
-   * Provides configuration to handle P tags.
-   *
-   * @returns {{tags: string[]}}
-   */
-  static get pasteConfig() {
-    return {
-      tags: [ 'P' ],
-    };
-  }
-
-  /**
    * Icon and title for displaying at the Toolbox
    *
    * @returns {{icon: string, title: string}}

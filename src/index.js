@@ -2,7 +2,7 @@
  * Build styles
  */
 import './index.css';
-
+console.log("kinez")
 import { IconText } from '@codexteam/icons'
 
 /**
@@ -33,7 +33,7 @@ export default class Paragraph {
    * @class
    */
   static get DEFAULT_PLACEHOLDER() {
-    return '';
+    return 'JA SAM KINEZ';
   }
 
   /**
@@ -55,7 +55,7 @@ export default class Paragraph {
 
     this._CSS = {
       block: this.api.styles.block,
-      wrapper: 'ce-paragraph',
+      wrapper: 'kinez-paragraph',
     };
 
     if (!this.readOnly) {
@@ -67,7 +67,7 @@ export default class Paragraph {
      *
      * @type {string}
      */
-    this._placeholder = config.placeholder ? config.placeholder : Paragraph.DEFAULT_PLACEHOLDER;
+    this._placeholder = 'Kinez';
     this._data = {};
     this._element = null;
     this._preserveBlank = true;

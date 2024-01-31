@@ -156,10 +156,6 @@ export default class Paragraph {
    * @public
    */
   validate(savedData) {
-    if (savedData.text.trim() === '' && !this._preserveBlank) {
-      return false;
-    }
-
     return true;
   }
 

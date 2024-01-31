@@ -200,9 +200,7 @@ export default class Paragraph {
    */
   static get sanitize() {
     return {
-      text: {
-        br: true,
-      },
+      text: true
     };
   }
 

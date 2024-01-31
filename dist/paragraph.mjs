@@ -28,6 +28,7 @@ class a {
    * @param {boolean} readOnly - read only mode flag
    */
   constructor({ data: t, config: e, api: i, readOnly: n }) {
+    console.log(t);
     this.api = i, this.readOnly = n, this._CSS = {
       block: this.api.styles.block,
       wrapper: "ce-paragraph"
@@ -179,7 +180,7 @@ class a {
    */
   static get pasteConfig() {
     return {
-      tags: ["P"]
+      tags: ["P", "BR"]
     };
   }
   /**

@@ -89,6 +89,13 @@ export default class Paragraph {
     }
   }
 
+  static get pasteConfig() {
+    return {
+      tags: ['P', 'BR'],
+    }
+  }
+
+
   /**
    * Create Tool's view
    *

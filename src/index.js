@@ -46,6 +46,10 @@ export default class Paragraph {
    * @param {boolean} readOnly - read only mode flag
    */
   constructor({ data, config, api, readOnly }) {
+
+    console.log(data);
+
+    
     this.api = api;
     this.readOnly = readOnly;
 
@@ -66,7 +70,7 @@ export default class Paragraph {
     this._placeholder = config.placeholder ? config.placeholder : Paragraph.DEFAULT_PLACEHOLDER;
     this._data = {};
     this._element = null;
-    this._preserveBlank = config.preserveBlank !== undefined ? config.preserveBlank : false;
+    this._preserveBlank = true;
 
     this.data = data;
   }
